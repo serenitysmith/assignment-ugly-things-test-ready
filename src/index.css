@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.create--ugly {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 150px;
+  border: 1px solid #eaeaea;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs input {
+  border: 1px solid #eaeaea;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.submit {
+  background-color: inherit;
+  border: 1px solid #eaeaea;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding: 10px 35px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ugly-things--container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px 150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.ugly-thing {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 25px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  justify-content: center;
+}
+
+.ugly-thing * {
+  margin: 2px;
+  padding: 3px;
+}
+
+.ugly-thing--img {
+  background-image: url("photographer.jpg");
+  background-color: #cccccc;
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ugly--input {
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  border: 1px solid #eaeaea;
+  padding: 4.6px;
+}
+
+.btn {
+  background-color: inherit;
+  border: 1px solid #eaeaea;
+  border-radius: 3px;
+  padding: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .create--ugly {
+    margin: 10px;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+
+  .ugly-things--container {
+    margin: 30px 10px;
+  }
+}
